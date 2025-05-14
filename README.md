@@ -1,2 +1,2 @@
-# clothing page
+# Coffee Haven
  
