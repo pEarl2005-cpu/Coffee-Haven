@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Gallery</title>
+</head>
+<body> 
+  <style>   
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f5f2;
+  color: #3e2f2f;
+  line-height: 1.6;
+}
+nav {
+  background-color: #4b2e2e;
+  padding: 15px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: #a47148;
+  border-radius: 5px;
+}
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fff2e6;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #6e4e4e;
+}
+header h2{
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fff2e6;
+  font-size: 2.5em;
+  margin-top: 10px;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.gallery img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+footer {
+  text-align: center;
+  background-color: #4b2e2e;
+  color: #fff;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+  </style>
+  <nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="menu.html" class="active">Menu</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="feedback.html" class="active">Feedback</a></li>
+  </ul>
+</nav>
+
+<header>
+  <h1>Our Coffee Gallery</h1>
+  <p>Discover the aroma through pictures</p>
+</header>
+
+<section class="gallery">
+  <img src="download (4).jpeg" alt="Espresso Shot">
+  <img src="download (5).jpeg" alt="Latte Art">
+  <img src="images (18).jpeg" alt="Coffee Beans">
+  <img src="download (6).jpeg" alt="Cappuccino">
+  <img src="download (7).jpeg" alt="Iced Coffee">
+  <img src="download (8).jpeg" alt="Coffee Brewing">
+  <img src="download (12).jpeg">
+  <img src="images (23).jpeg">
+</section>
+<h2>BIGGER SNACKS MEAN BIGGER SLACKS</h1>
+  <img src="images (19).jpeg">
+  <img src="images (21).jpeg">
+  <img src="download (14) - Copy.jpeg">
+  <img src="download (15) - Copy.jpeg">
+  <img src="download (16) - Copy.jpeg">
+
+<footer>
+  <p>&copy; 2025 Coffee Haven. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

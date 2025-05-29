@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Coffee Haven</title>
+  <link rel="stylesheet" href="style.css/css" />
+</head>
+<style>
+  nav {
+  background-color: #4b2e2e;
+  padding: 15px 0;
+  }
+  nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  }
+  nav ul li {
+  margin: 0 15px;
+  }
+  nav ul li a {
+  text-decoration: none;
+  color: #f1f1f1;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  }
+  nav ul li a:hover,
+  nav ul li a.active {
+  background-color:  #a47148;
+  color: #4b2e2e;
+}
+    .contact-section {
+    background-color: #fdf6f0; /* light coffee tone */
+    padding: 60px 20px;
+    font-family: 'Segoe UI', sans-serif;
+    color: #4b2e2e;
+  }
+  
+  .contact-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #3e2723;
+  }
+  
+  .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+    gap: 40px;
+  }
+  
+  /* Contact form styles */
+  .contact-form {
+    flex: 1;
+    min-width: 300px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+</style>
+<body>
+  <nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="menu.html" class="active">Menu</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="feedback.html" class="active">Feedback</a></li>
+  </ul>
+</nav>
+
+  <section class="contact-section" id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-container">
+      
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <form action="#" method="post">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h3>Visit Coffee Haven</h3>
+        <p>123 Roast Street, Gaborone, Botswana</p>
+        <p><strong>Phone:</strong> +267 78404598</p>
+        <p><strong>Email:</strong> contact@coffeehaven.co.bw</p>
+        
+        <!-- Google Map Embed -->
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.668476094328!2d25.90892031490191!3d-24.65480008416826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ea3893c4bcccccb%3A0x2c6c264bf7a556ef!2sGaborone!5e0!3m2!1sen!2sbw!4v1600000000000!5m2!1sen!2sbw" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
